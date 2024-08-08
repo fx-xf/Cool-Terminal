@@ -21,72 +21,53 @@ Before you begin, ensure you have the following installed on your Linux system:
     PortAudio (for sound input)
 
 Installation
+Clone the repository:
 
-    Clone the repository:
-
-    bash
-
-git clone https://github.com/fx-xf/Cool-Terminal.git
-cd Cool-Terminal
+    git clone https://github.com/fx-xf/Cool-Terminal.git
+    cd Cool-Terminal
 
 Set up the virtual environment:
 
-bash
+    python -m venv myenv
+    source myenv/bin/activate
 
-python -m venv myenv
-source myenv/bin/activate
+Install Python dependencies:
 
-Install dependencies:
-
-bash
-
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 Install FFmpeg and PortAudio:
 
+These are necessary for audio playback and recording.
+
 On Ubuntu/Debian:
 
-bash
-
-sudo apt-get update
-sudo apt-get install ffmpeg portaudio19-dev
+    sudo apt-get update
+    sudo apt-get install ffmpeg portaudio19-dev
 
 On Arch Linux:
 
-bash
-
-sudo pacman -S ffmpeg portaudio
+    sudo pacman -S ffmpeg portaudio
 
 On Fedora:
 
-bash
-
-sudo dnf install ffmpeg portaudio-devel
+    sudo dnf install ffmpeg portaudio-devel
 
 Download and configure the Vosk model:
 
-    Visit the Vosk Models page and download the model that suits your needs.
-
-    Extract the model to a directory of your choice.
-
-    Update the MODEL_PATH variable in main.py to point to the directory where you extracted the model:
-
-    python
+Visit the Vosk Models page and download the model that suits your needs.
+Extract the model to a directory of your choice.
+Update the MODEL_PATH variable in main.py to point to the directory where you extracted the model:
 
         # In main.py
-        MODEL_PATH = "path/to/your/vosk-model"
+        MODEL_PATH = "path/to/your/vosk-model-directory"
 
 Running the Project
 
-    Activate the virtual environment:
+Activate the virtual environment:
 
-    bash
-
-source myenv/bin/activate
+    source myenv/bin/activate
 
 Run the application:
-
-bash
 
     python main.py
 
@@ -132,4 +113,4 @@ This project is licensed under the MIT License. See the LICENSE file for details
     Thanks to the developers of Vosk for the amazing speech recognition library.
     Shoutout to the FFmpeg and PortAudio communities for their fantastic tools.
 
-Made with 💻 by fx_xf
+Made with 💻 by Your fx-xf
