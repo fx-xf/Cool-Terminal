@@ -84,12 +84,19 @@ Run the application:
 plaintext
 
 Cool-Terminal/
+
 ├── arts/                 # Themed content in HTML format
+
 ├── data/                 # Audio and phrase data for the assistant
+
 ├── myenv/                # Virtual environment directory
+
 ├── main.py               # Main script for running the application
+
 ├── requirements.txt      # Project dependencies
+
 └── README.md             # This file!
+
 
 🛠 Troubleshooting
 
