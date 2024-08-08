@@ -58,8 +58,8 @@ Visit the Vosk Models page and download the model that suits your needs.
 Extract the model to a directory of your choice.
 Update the MODEL_PATH variable in main.py to point to the directory where you extracted the model:
 
-        # In main.py
-        MODEL_PATH = "path/to/your/vosk-model-directory"
+    # In main.py
+    MODEL_PATH = "path/to/your/vosk-model-directory"
 
 Running the Project
 
