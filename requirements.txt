@@ -1,0 +1,6 @@
+sounddevice
+vosk
+GPUtil
+psutil
+pydub
+setuptools
